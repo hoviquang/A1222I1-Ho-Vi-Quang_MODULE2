@@ -2,7 +2,7 @@ package ss03_methods.bai_tap;
 
 import java.util.Scanner;
 
-public class DemSoKiTuXuatHienTrong1Chuoi {
+public class DemSoKiTuXuatHienTrongMotChuoi {
     public static void main(String[] args){
         String word ;
         int count = 0 ;

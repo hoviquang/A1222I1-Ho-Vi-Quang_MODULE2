@@ -38,6 +38,13 @@ public class QuadraticEquation {
     }
 
     public void getRoot2(){
-
+        double root2;
+        if(getDiscriminants() > 0){
+            root2 = (-this.b - Math.pow(getDiscriminants(),0.5))/(2*this.a);
+        } else if(getDiscriminants() == 0){
+            root2 = (-this.b)/(2*this.a);
+        } else{
+            System.out.println("The equation has no roots");
+        }
     }
 }
