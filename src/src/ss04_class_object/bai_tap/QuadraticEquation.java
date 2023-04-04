@@ -12,39 +12,50 @@ public class QuadraticEquation {
       this.b =b;
       this.c =c;
     }
-    public double getA(){
-      return this.a;
+    public double getDiscriminant() {
+        double dental = Math.pow(this.getB(),2) - (4*this.getA()*this.getC());
+        return dental;
     }
-    public double getB(){
-        return this.b;
+    public double getRoot1() {
+        double root1 = (-this.getB() + Math.sqrt(this.getDiscriminant()))/(2*this.getA());
+        return root1;
     }
-    public double getC(){
-        return this.c;
+    public double getRoot2() {
+        double root2 = (-this.getB() - Math.sqrt(this.getDiscriminant()))/(2*this.getA());
+        return root2;
     }
-    public double getDiscriminants(){
-      double delta ;
-      delta = Math.pow(this.b,2) - 4*this.a*this.c;
-      return delta;
+    public double getA() {
+        return a;
     }
-    public void getRoot1(){
-        double root1;
-        if (getDiscriminants() > 0) {
-            root1 = (-this.b+Math.pow(getDiscriminants(),0.5))/(2*this.a);
-        }else if (getDiscriminants() == 0) {
-            root1 = (-this.b)/(2*this.a);
+    public void setA(double a) {
+        this.a = a;
+    }
+    public double getB() {
+        return b;
+    }
+    public void setB(double b) {
+        this.b = b;
+    }
+    public double getC() {
+        return c;
+    }
+    public void setC(double c) {
+        this.c = c;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a,b,c : ");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        QuadraticEquation qe = new QuadraticEquation(a, b, c);
+        if(qe.getDiscriminant()>0) {
+            System.out.println("The equation has two roots "+ qe.getRoot1()+ " and " +qe.getRoot2());
+        }else if(qe.getDiscriminant()==0) {
+            System.out.println("The equation has one root "+ qe.getRoot1());
         }else {
-            System.out.println("The equation has no roots");
+            System.out.println("The equation has no real roots");
         }
-    }
 
-    public void getRoot2(){
-        double root2;
-        if(getDiscriminants() > 0){
-            root2 = (-this.b - Math.pow(getDiscriminants(),0.5))/(2*this.a);
-        } else if(getDiscriminants() == 0){
-            root2 = (-this.b)/(2*this.a);
-        } else{
-            System.out.println("The equation has no roots");
-        }
     }
 }

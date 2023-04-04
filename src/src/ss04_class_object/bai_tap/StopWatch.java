@@ -35,4 +35,12 @@ public class StopWatch {
         int miliSecond = ((endTime.getHour() - startTime.getHour()) * 3600 + (endTime.getMinute() - startTime.getMinute()) * 60 + (endTime.getSecond() - startTime.getSecond()) * 1000);
         return miliSecond;
     }
+
+    public static void main(String[] args) {
+        StopWatch stopWatch = new StopWatch();
+        System.out.println(stopWatch);
+        stopWatch.getElapsedTime();
+        System.out.println(stopWatch);
+    }
+
 }
