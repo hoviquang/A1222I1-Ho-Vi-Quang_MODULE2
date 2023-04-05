@@ -24,6 +24,7 @@ public class QuadraticEquation {
         double root2 = (-this.getB() - Math.sqrt(this.getDiscriminant()))/(2*this.getA());
         return root2;
     }
+
     public double getA() {
         return a;
     }
