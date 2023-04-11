@@ -1,4 +1,4 @@
-package ss06_inheritance.thuc_hanh;
+package ss06_inheritance.thuc_hanh.he_cac_doi_tuong_hinh_hoc;
 
 public class Geometric {
     private String color = "white";
