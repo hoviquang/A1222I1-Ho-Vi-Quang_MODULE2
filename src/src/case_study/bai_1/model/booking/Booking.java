@@ -53,7 +53,7 @@ public class Booking {
     public void setIdCustomer(int idCustomer) {
         this.idCustomer = idCustomer;
     }
-
+    
     public String getNameService() {
         return nameService;
     }
