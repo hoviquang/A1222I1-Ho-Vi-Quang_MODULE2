@@ -1,11 +1,13 @@
 package ss06_inheritance.bai_tap.lop_circle_va_lop_cylinder;
 
-public class Cylinder extends Circle {
+public class Cylinder extends Circle{
     public double height;
+    public double volume;
 
-    public Cylinder(double radius, String color, double height) {
-        super(radius, color);
+    public Cylinder(double height,double volume, double radius, String color) {
+        super(radius,color);
         this.height = height;
+
     }
 
     public double getHeight() {
@@ -20,12 +22,17 @@ public class Cylinder extends Circle {
         return Math.PI * getRadius() * getRadius() * height;
     }
 
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
     @Override
     public String toString() {
         return "Cylinder{" +
-                " radius = " + getRadius() +
-                " - height=" + height +
-                " - volume=" + getVolume() +
+                "height=" + height +
+                ", volume=" + getVolume() +
+                ", radius=" + getRadius() +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

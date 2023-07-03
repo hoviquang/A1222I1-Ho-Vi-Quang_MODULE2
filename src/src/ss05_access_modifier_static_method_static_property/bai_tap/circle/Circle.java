@@ -2,19 +2,19 @@ package ss05_access_modifier_static_method_static_property.bai_tap.circle;
 
 public class Circle {
     private double radius;
-    private String colour;
+    private String color;
 
-    Circle (){
+    Circle(){
         this.radius = 1.0;
-        this.colour = "red";
+        this.color = "red";
     }
 
-    public double getRadius(){
+    public double getRadius() {
         return this.radius;
     }
 
-    public String getColour(){
-        return this.colour;
+    public String getColor() {
+        return this.color;
     }
 
     public double getArea(){

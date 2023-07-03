@@ -1,7 +1,7 @@
 package ss06_inheritance.bai_tap.lop_circle_va_lop_cylinder;
 
 public class Circle {
-    public double radius ;
+    public double radius;
     public String color;
 
     public Circle(double radius, String color){
@@ -9,31 +9,35 @@ public class Circle {
         this.color = color;
     }
 
-    public double getRadius(){
+    public double getRadius() {
         return radius;
     }
-    public void setRadius(double radius){
+
+    public void setRadius(double radius) {
         this.radius = radius;
     }
-    public String getColor(){
+
+    public String getColor() {
         return color;
     }
-    public void setColor(String color){
+
+    public void setColor(String color) {
         this.color = color;
     }
 
     public double getArea(){
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI*Math.pow(radius,2 );
     }
+
     public double getPerimeter(){
-        return radius * 2 * Math.PI;
+        return radius*2*Math.PI;
     }
 
     @Override
     public String toString() {
         return "Circle{" +
-                "radius = " + radius +
-                " - Color = " + color +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

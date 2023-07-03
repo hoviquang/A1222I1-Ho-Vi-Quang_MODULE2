@@ -12,9 +12,9 @@ public class ThemPhanTuVaoMang {
         int[] arr = {1,2,3,4,5,6};
         int[] arrAdd = new int[arr.length + 1];
 
-        System.out.println("Enter index want to add a element");
+        System.out.println("Enter index want to add a element: ");
         index = input.nextInt();
-        System.out.println("Enter name to add");
+        System.out.println("Enter name to add: ");
         number = input.nextInt();
 
         for(int element : arr){

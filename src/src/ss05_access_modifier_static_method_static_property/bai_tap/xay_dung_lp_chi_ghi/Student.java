@@ -4,20 +4,21 @@ public class Student {
     private String name;
     private String classes;
 
-    Student() {
-        this.name = "John";
-        this.classes = "CO2";
+    Student(){
+        this.name ="John";
+        this.classes="CO2";
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
-    }
-    public String getClasses(){
-        return this.classes;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getClasses() {
+        return this.classes;
     }
 
     public void setClasses(String classes) {

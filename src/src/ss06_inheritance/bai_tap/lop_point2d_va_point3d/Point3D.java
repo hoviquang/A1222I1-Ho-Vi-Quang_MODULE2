@@ -2,8 +2,8 @@ package ss06_inheritance.bai_tap.lop_point2d_va_point3d;
 
 public class Point3D extends Point2D {
     public float z;
-    public Point3D(){};
-    Point3D(float x , float y , float z){
+
+   public Point3D(float x , float y , float z){
         super(x, y);
         this.z = z;
     }
@@ -26,8 +26,8 @@ public class Point3D extends Point2D {
     public String toString(){
         return "Point3D{" +
                 "X = " + x +
-                "- Y = " + y +
-                "- Z = " + z +
+                ", Y = " + y +
+                ", Z = " + z +
                 "}";
     }
 }
