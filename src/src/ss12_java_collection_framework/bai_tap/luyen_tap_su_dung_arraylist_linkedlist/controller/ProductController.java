@@ -1,13 +1,13 @@
 package ss12_java_collection_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist.controller;
 
-import ss12_java_collection_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist.service.IProduct;
+
 import ss12_java_collection_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist.service.ProductService;
 
 import java.util.Scanner;
 
 public class ProductController {
     public static void main(String[] args) {
-        IProduct iProduct = new ProductService();
+        IProduct iProduct = new IProduct();
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("1. Thêm sản phẩm");
