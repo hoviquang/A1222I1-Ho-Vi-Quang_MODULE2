@@ -1,7 +1,6 @@
 package ss12_java_collection_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist.service;
 
-
-import ss17_io_binary_serialization.bai_tap.quan_ly_san_pham_luu_ra_file_nhi_phan.Product;
+import ss12_java_collection_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +46,7 @@ public class ProductService implements IProduct {
         System.out.println("Vui lòng nhập id của sản phẩm muốn xóa");
         int checkId = scanner.nextInt();
         for(Product product : products){
-            if(product.toString() == checkId){
+            if(product.toString().equals(String.valueOf(checkId))){
                 products.remove(product);
                 System.out.println("Sản phẩm đã được xóa");
                 break;

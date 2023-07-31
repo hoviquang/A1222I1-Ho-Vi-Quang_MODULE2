@@ -1,6 +1,6 @@
 package model;
 
-public class Student extends Person{
+public class Student extends model.Person {
     private double grade;
 
     public double getGrade() {

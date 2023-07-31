@@ -17,6 +17,11 @@ public class Product implements Serializable{
         this.manufacturer = manufacturer;
         this.price = price;
     }
+
+    public Product(int id, String name, double price) {
+
+    }
+
     @Override
     public String toString() {
         return "Product [id=" + id + ", name=" + name + ", manufacturer=" + manufacturer + ", price=" + price + "]";
